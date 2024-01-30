@@ -27,3 +27,5 @@ Benefícios:
 - Verificação de dados: Validar veículo e motorista para garantir a integridade.
 - Monitoramento em tempo real: Monitoramento continuo.
 - Segurança/Privacidade: Garantir a segurança das informações.
+- Veículos disponiveis: Liberar veículos para trafegar somente se estiver disponivel.
+- Gestão de funcionários: Deve ser possivel cadastrar e incluir informações como nome, idade, CPF, CNH, etc.
