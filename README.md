@@ -20,4 +20,10 @@ Benefícios:
 - Planejamento mais amplo.
 - Segurança para o motorista.
 - Taxa de quebra de veiculos reduzido.
-- Gestão de veiculos/motorista.
+- Gestão de veículos/motoristas.
+
+## Regras de negócio
+- Restrições de acesso: Apenas usuários com permissão deveram ter acesso.
+- Verificação de dados: Validar veículo e motorista para garantir a integridade.
+- Monitoramento em tempo real: Monitoramento continuo.
+- Segurança/Privacidade: Garantir a segurança das informações.
