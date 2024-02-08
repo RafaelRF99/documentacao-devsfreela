@@ -1,10 +1,6 @@
 # FleetMaster
 Serviço de gerenciamento de frota de veiculos.
 
-Detalhes da Stack e integrações:
- - O projeto será feito com framework Angular.
- - Integração ao Firebase Realtime Database.
-
 ## Finalidade
 O website da FleetMaster auxilia as empresas no gerenciamento de seus veículos disponibilizando diversas ferramentas para o melhor desempenho.
 
@@ -34,3 +30,6 @@ Benefícios:
 - Segurança/Privacidade: Garantir a segurança das informações.
 - Veículos disponiveis: Liberar veículos para trafegar somente se estiver disponivel.
 - Gestão de motoristas: Deve ser possivel cadastrar e incluir informações como nome, idade, CPF, CNH, etc.
+
+## Referência
+Diagrama: `https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000`
