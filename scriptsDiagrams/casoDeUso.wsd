@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+
+actor "Usuário Autenticado" as Usuario
+usecase "Cadastrar veículos" as cadastroVeiculos
+Usuario --> cadastroVeiculos
+usecase "Cadastrar motorista" as cadastroMotorista
+Usuario --> cadastroMotorista
+usecase "Visualizar veículos cadastrado" as veiculosCadastrado
+Usuario --> veiculosCadastrado
+usecase "Visualizar veículos Maps" as veiculosMaps
+Usuario --> veiculosMaps
+usecase "Manutenção necessária" as manutencao
+Usuario --> manutencao
+actor "Usuário sem autenticação" as Usuario1
+usecase "Tela Login" as login
+Usuario1 --> login
+usecase "Portfólio" as portfolio
+Usuario1 --> portfolio
+@enduml

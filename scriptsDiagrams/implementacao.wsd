@@ -1,0 +1,31 @@
+@startuml
+
+node "Cliente" {
+    node "Browser" {
+         component "HTML5"
+      }
+}
+
+node "Servidor" {
+    component "Back-End"
+}
+
+node "Servidor de Banco de Dados" {
+    database "Banco de Dados"
+}
+
+node "Celular" {
+    component "Android"
+}
+
+node "Servidor Localização" {
+    database "Banco de Dados Terceiro"
+}
+
+"Cliente" --> "Servidor"
+"Servidor" --> "Servidor de Banco de Dados"
+
+"Celular" --> "Servidor Localização"
+"Servidor Localização" --> "Cliente"
+
+@enduml

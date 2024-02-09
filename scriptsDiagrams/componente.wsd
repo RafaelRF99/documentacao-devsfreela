@@ -1,0 +1,22 @@
+@startuml
+package "Sistema" {
+
+    [Usuário] as painel
+    [cadastro] as cadastro
+    [Veículos Cadastrados] as veiculosCadastrados
+    [Banco de Dados] as db
+
+    package "Cadastro veículo/motorista" {
+        [Banco de Dados (Terceiro)] as db2
+        [Localização no Maps] as localizacao
+    
+        db2 ..> localizacao
+        painel --> db2
+    }
+
+    painel --> db
+    painel --> cadastro
+    cadastro --> db
+    db ..> veiculosCadastrados
+}
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+object Usuario {
+    - id: int = 1
+    - email: string = user@hotmail.com
+    - senha: string = "123"
+    - token: string = token123
+}
+
+object Motorista {
+    - nomeCompleto: string = Matheus Oliveira
+    - idade: string = "25"
+    - sexo: string = masculino
+    - CPF: string = "12345678912"
+    - CNH: string = "12345678989"
+}
+
+object Veiculo {
+    - id: int = 1
+    - marca: string = Toyota
+    - cor: string = preto
+    - modelo: string = Corolla
+    - ano: string = "2010"
+    - kmRodado: "1250"
+}
+
+object LocalizacaoMaps {
+    - latitude: int = 154
+    - longitude: int = 135
+}
+
+object Manutencao {
+    - nome: string = Auto Peças
+    - telefone: string = "123456"
+    - endereco: string = "Rua Joao Teteu"
+    - data: string = 05-15-2024T15:30:00Z
+}
+
+Usuario -- Veiculo
+Usuario -- Motorista
+Motorista -- Veiculo
+Veiculo -- LocalizacaoMaps
+Veiculo -- Manutencao
+@enduml
