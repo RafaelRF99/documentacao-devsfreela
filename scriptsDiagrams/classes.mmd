@@ -1,0 +1,33 @@
+classDiagram
+    
+    class Carro{
+      +Number id
+      +String placa
+      +String cor
+      +String marca
+      +String modelo
+      +String ano
+      +String KmRodado
+      +String renavan
+      +void alterar()
+      +void cadastrar()
+    }
+
+    class Motorista {
+        +Number id
+        +String nomeCompleto
+        +String idade
+        +String sexo
+        +String CPF
+        +String CNH
+        +void alterar()
+        +void cadastrar()
+    }
+
+    class Manutencao {
+        +String telefone
+        +String contactar()
+    }
+
+    Motorista --> Carro
+    Carro --> Manutencao
