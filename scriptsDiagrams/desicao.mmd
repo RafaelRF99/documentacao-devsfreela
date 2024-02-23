@@ -1,10 +1,10 @@
 flowchart TD
     manutencao[Manutenção no veículo] --> inform{Manutenção necessária?}
     inform --> sim[Sim]
-    inform <--> nao[Não]
+    inform --> nao[Não]
     sim --> empresaTerceira[Contratar empresa terceirizada para o serviço]
 
     motorista[Motorista] --> ajuda{Necessita de ajuda?}
     ajuda --> sim1[Sim]
-    ajuda <--> nao1[Não]
+    ajuda --> nao1[Não]
     sim1 --> suporte[Acionar suporte]

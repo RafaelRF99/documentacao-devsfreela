@@ -1,9 +1,9 @@
 @startuml
 
-node "Cliente" {
+node "Web Servece" {
     node "Browser" {
-         component "HTML5"
-      }
+        component "HTML5"
+    }
 }
 
 node "Servidor" {
@@ -11,21 +11,21 @@ node "Servidor" {
 }
 
 node "Servidor de Banco de Dados" {
-    database "Banco de Dados"
+    database "NoSQL"
 }
 
 node "Celular" {
-    component "Android"
+    component "Maps"
 }
 
-node "Servidor Localização" {
-    database "Banco de Dados Terceiro"
+node "Servidor Localização (Terceiro)" {
+    database "MySQL"
 }
 
-"Cliente" --> "Servidor"
+"Web Servece" --> "Servidor"
 "Servidor" --> "Servidor de Banco de Dados"
 
-"Celular" --> "Servidor Localização"
-"Servidor Localização" --> "Cliente"
+"Celular" --> "Servidor Localização (Terceiro)"
+"Servidor Localização (Terceiro)" --> "Web Servece"
 
 @enduml

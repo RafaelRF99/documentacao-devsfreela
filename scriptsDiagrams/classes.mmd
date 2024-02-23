@@ -29,5 +29,11 @@ classDiagram
         +String contactar()
     }
 
+    class Localizacao {
+        +Number longitude
+        +Number latitude
+    }
+
     Motorista --> Carro
     Carro --> Manutencao
+    Localizacao --> Carro
