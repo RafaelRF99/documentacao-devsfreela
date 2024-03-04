@@ -31,5 +31,20 @@ Benefícios:
 - Veículos disponiveis: Liberar veículos para trafegar somente se estiver disponivel.
 - Gestão de motoristas: Deve ser possivel cadastrar e incluir informações como nome, idade, CPF, CNH, etc.
 
+## Arquitetura
+<b>Front-End</b>
+- pages: Local para páginas
+- components: Pode ser utilizado em mais de um local ou ajuda na composição de algo
+- routes: Rotas da aplicação
+- styles: Estilização da página
+- assets: Todas as imagens
+
+  
+<b>Back-End</b>
+- database: Conexão com o banco
+- controllers: Interage com banco fazendo requisição
+- routes: Toda lógica de rotas
+- server: Arquivo base para rodar a aplicação
+
 ## Referência
 Diagrama: `https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000`, `https://mermaid.live/edit`

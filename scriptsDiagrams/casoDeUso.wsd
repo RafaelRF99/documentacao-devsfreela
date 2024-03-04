@@ -1,20 +1,26 @@
 @startuml
 left to right direction
 
-actor "Usuário Autenticado" as Usuario
+actor "Usuário" as Usuario
+
+usecase "Autenticado" as Autenticado
+usecase "Sem Autenticação" as SemAutenticacao
+Usuario --> Autenticado
+
 usecase "Cadastrar veículos" as cadastroVeiculos
-Usuario --> cadastroVeiculos
+Autenticado--> cadastroVeiculos
 usecase "Cadastrar motorista" as cadastroMotorista
-Usuario --> cadastroMotorista
+Autenticado--> cadastroMotorista
 usecase "Visualizar veículos cadastrado" as veiculosCadastrado
-Usuario --> veiculosCadastrado
+Autenticado--> veiculosCadastrado
 usecase "Visualizar veículos Maps" as veiculosMaps
-Usuario --> veiculosMaps
-usecase "Manutenção necessária" as manutencao
-Usuario --> manutencao
-actor "Usuário sem autenticação" as Usuario1
+Autenticado --> veiculosMaps
+usecase "Empresa 3a (Manutenção)" as manutencao
+Autenticado--> manutencao
+
+Usuario --> SemAutenticacao
 usecase "Tela Login" as login
-Usuario1 --> login
+SemAutenticacao--> login
 usecase "Portfólio" as portfolio
-Usuario1 --> portfolio
+SemAutenticacao--> portfolio
 @enduml

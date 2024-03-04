@@ -2,7 +2,7 @@
 
 node "Web Servece" {
     node "Browser" {
-        component "HTML5"
+        component "Front-End"
     }
 }
 
@@ -22,10 +22,10 @@ node "Servidor Localização (Terceiro)" {
     database "MySQL"
 }
 
-"Web Servece" --> "Servidor"
-"Servidor" --> "Servidor de Banco de Dados"
+"Web Servece" <--> "Servidor"
+"Servidor" <--> "Servidor de Banco de Dados"
 
 "Celular" --> "Servidor Localização (Terceiro)"
-"Servidor Localização (Terceiro)" --> "Web Servece"
+"Servidor" <--> "Servidor Localização (Terceiro)"
 
 @enduml

@@ -1,0 +1,31 @@
+sequenceDiagram
+    actor Admin
+
+    participant motorista
+    participant veiculo
+    participant empresaTerceira
+    participant localizacao
+    participant API
+    participant DB
+
+    %% MOTORISTA
+    Admin ->>+ motorista: Cadastrar/Alterar/Deletar motorista
+    motorista ->>+ API: Enviar solicitação
+    API ->>+ DB: Enviar informações do motorista
+    DB -->>- Admin: statusMotorista()
+
+    %% VEICULO
+    Admin ->>+ veiculo: Cadastrar/Alterar/Deletar veículo
+    veiculo ->>+ API: Enviar solicitação
+    API ->>+ DB: Enviar informações do veículo
+    DB -->>- Admin: statusVeiculo()
+
+    %% EMPRESA TERCEIRA
+    Admin ->>+ empresaTerceira: Acionar suporte
+    empresaTerceira -->>- Admin: status()
+
+    %% LOCALIZACAO
+    Admin ->>+ localizacao: solicitar localização motorista
+    localizacao ->>+ API: Enviar solicitação
+    API ->>+ DB: Buscar informação
+    DB -->>- Admin: statusLocalizacao()

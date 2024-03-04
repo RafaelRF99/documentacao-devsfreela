@@ -11,6 +11,7 @@ classDiagram
       +String renavan
       +void alterar()
       +void cadastrar()
+      +void deletar()
     }
 
     class Motorista {
@@ -22,11 +23,14 @@ classDiagram
         +String CNH
         +void alterar()
         +void cadastrar()
+        +void deletar()
     }
 
-    class Manutencao {
+    class EmpresaTerceira {
         +String telefone
         +String contactar()
+        +void cadastrar()
+        +void deletar()
     }
 
     class Localizacao {
@@ -35,5 +39,5 @@ classDiagram
     }
 
     Motorista --> Carro
-    Carro --> Manutencao
+    Carro --> EmpresaTerceira
     Localizacao --> Carro
